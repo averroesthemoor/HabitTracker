@@ -1,12 +1,4 @@
-#include <iostream>
-#include <filesystem>
-#include <string>
-#include <fstream>
-#include <iomanip>
-#include <time.h>
-#include <vector>
-#include <algorithm>
-
+#include <bits/stdc++.h>
 namespace fs = std::filesystem;
 using namespace std;
 
@@ -130,7 +122,7 @@ int main() {
 	double hours, output;
 	int numHabits;
 	string filename = to_string(month) + string("-") + to_string(year) + string(".txt");
-	string path = "../HabitTracker";
+	string path = "./HabitTracker";
 	vector<string> files;
 	
 	for (const auto & entry : fs::directory_iterator(path)) {
